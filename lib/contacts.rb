@@ -19,5 +19,6 @@ def remove_strawberry(contacts)
     attributes.each do |key,value|
       if value.any? == "strawberry"
         value.pop
-
+end
+end
 end

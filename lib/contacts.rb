@@ -17,8 +17,9 @@ require 'pry'
 def remove_strawberry(contacts)
   contacts.each do |names,attributes|
     attributes.each do |key,value|
-      if value[0] == "strawberry"
+      value.each do |flavor| if flavor == "strawberry"
         value.shift
+end
 end
 end
 end

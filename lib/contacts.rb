@@ -18,7 +18,7 @@ def remove_strawberry(contacts)
   contacts.each do |names,attributes|
     attributes.each do |key,value|
       if value[0] == "strawberry"
-        value.pop
+        value.unshift
 end
 end
 end
